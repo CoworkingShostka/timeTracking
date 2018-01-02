@@ -23,7 +23,7 @@
                   <div class="row">
 
                       <div class="col-sm-2 user-details">
-                          <img :src="timeEntry.user.image" class="avatar img-circle img-responsive">
+                          <img :src="timeEntry.user.image" class="avatar rounded-circle img-fluid d-block">
                           <p class="text-center">
                               <strong>
                                   {{ timeEntry.user.firstName }}
@@ -34,11 +34,11 @@
 
                     <div class="col-sm-2 text-center time-block">
                         <h3 class="list-group-item-text total-time">
-                            <img src="@/assets/clock.svg" alt="">
+                            <img src="../assets/clock.svg" alt="">
                             {{ timeEntry.totalTime  }}
                         </h3>
-                        <p class="label label-primary text-center">
-                            <img src="@/assets/calendar.svg" alt="">
+                        <p class="badge badge-primary text-center">
+                            <img src="../assets/calendar.svg" alt="">
                             {{ timeEntry.date }}
                         </p>
                     </div>
